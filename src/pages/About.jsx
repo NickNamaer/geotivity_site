@@ -15,7 +15,7 @@ export default function About() {
         <p>
           長野県職員として林業・治山系の業務に関わる中で、
           「データはあるのに活かしきれていない」と感じたのがきっかけで
-          GeoTivity を作り始めました。
+          退職後、GeoTivity を作り始めました。
         </p>
         <p>
           現在は、QGISベースで単木解析や資源量推定を
@@ -40,7 +40,7 @@ export default function About() {
         <article className="card">
           <h3>経歴ざっくり</h3>
           <p>
-            ・長野県職員（林業・治山系）<br />
+            ・元長野県職員（林業・治山系）6年間在職<br />
             ・現場寄りの森林解析を実務で経験<br />
             ・GeoTivity を個人開発
           </p>
