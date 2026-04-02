@@ -51,7 +51,7 @@ const pricing = [
       "面積制限あり"
     ],
     cta: "GeoTivity.zip をダウンロード",
-    href: "https://github.com/NickNamaer/geotivity_site/releases/download/v1.0.0/GeoTivity.zip"
+    href: "https://github.com/NickNamaer/geotivity_site/releases/download/v1.0.0/GeoTivity_For_QGIS.zip"
   },
   {
     name: "GeoTivity for QGIS",
