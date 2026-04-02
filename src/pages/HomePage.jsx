@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import heroMonitor from "../assets/hero-monitor.png";
 
 const services = [
   {
@@ -41,20 +42,11 @@ export default function HomePage() {
             </div>
           </div>
 
-          <div className="hero-panel">
-            <div className="hero-metric">
-              <span>主な対象</span>
-              <strong>自治体 / 森林組合 / 林業事業体 / 調査会社</strong>
-            </div>
-            <div className="hero-metric">
-              <span>価格</span>
-              <strong>本体 税込330,000円 / 年間サポート 税込110,000円</strong>
-            </div>
-            <div className="hero-metric">
-              <span>提供形態</span>
-              <strong>ソフト販売 / トライアル / 解析受託 / 導入相談</strong>
-            </div>
-          </div>
+          <div
+            className="hero-visual"
+            style={{ backgroundImage: `url(${heroMonitor})` }}
+            aria-label="GeoTivity 解析画面"
+          />
         </div>
       </section>
 

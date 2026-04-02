@@ -9,6 +9,37 @@ const features = [
   "実務フローを意識したUI"
 ];
 
+const visuals = [
+  {
+    eyebrow: "Step 1",
+    title: "オルソ画像",
+    text: "元画像の状態から、森林の状況を確認します。",
+    image: "/software/ortho.png",
+    alt: "森林のオルソ画像"
+  },
+  {
+    eyebrow: "Step 2",
+    title: "樹頂点抽出",
+    text: "1本1本の木を自動検出し、単木解析の起点を作成します。",
+    image: "/software/treetops.png",
+    alt: "樹頂点抽出結果"
+  },
+  {
+    eyebrow: "Step 3",
+    title: "樹冠作成",
+    text: "樹冠をポリゴンとして分割し、木ごとの空間的なまとまりを把握します。",
+    image: "/software/crowns.png",
+    alt: "樹冠ポリゴン作成結果"
+  },
+  {
+    eyebrow: "Step 4",
+    title: "小班統計",
+    text: "小班単位で材積・密度などの整理につなげられる解析結果を可視化します。",
+    image: "/software/compartment-stats.png",
+    alt: "小班統計の可視化結果"
+  }
+];
+
 const pricing = [
   {
     name: "トライアル",
@@ -20,7 +51,7 @@ const pricing = [
       "面積制限あり"
     ],
     cta: "GeoTivity.zip をダウンロード",
-    href: "/downloads/GeoTivity.zip"
+    href: "https://github.com/NickNamaer/geotivity_site/releases/download/v1.0.0/GeoTivity.zip"
   },
   {
     name: "GeoTivity for QGIS",
@@ -109,8 +140,8 @@ export default function SoftwarePage() {
               トライアル申込から導入相談、販売までの動線をまとめた製品ページです。
             </p>
             <div className="button-row">
-              <a className="btn btn-primary" href="/downloads/GeoTivity.zip">GeoTivity.zip をダウンロード</a>
-              <a className="btn btn-secondary" href="#pricing">価格を見る</a>
+              <a className="btn btn-primary" href="https://github.com/NickNamaer/geotivity_site/releases/download/v1.0.0/GeoTivity.zip">GeoTivity.zip をダウンロード</a>
+              <a className="btn btn-secondary" href="#visuals">解析イメージを見る</a>
             </div>
           </div>
           <div className="product-sidecard">
@@ -121,6 +152,72 @@ export default function SoftwarePage() {
               <li>購入・見積依頼</li>
               <li>導入までの流れ確認</li>
             </ul>
+          </div>
+        </div>
+      </section>
+
+      <section className="section" id="visuals">
+        <div className="container">
+          <div className="section-heading">
+            <p className="eyebrow">Visual Workflow</p>
+            <h2>森林解析を、ここまで自動化。</h2>
+            <p>
+              航空写真から単木を検出し、樹冠を分割し、小班単位で整理につなげるまでの流れを、
+              GeoTivity for QGIS 上で一連に扱えます。
+            </p>
+          </div>
+
+          <div className="before-after-grid">
+            <article className="image-feature-card">
+              <div className="media-frame">
+                <img src="/software/ortho.png" alt="森林のオルソ画像" />
+              </div>
+              <div className="image-feature-copy">
+                <p className="eyebrow">Before</p>
+                <h3>元データの確認</h3>
+                <p>
+                  オルソ画像の状態から森林の状況を確認し、解析対象の範囲や林況を把握します。
+                </p>
+              </div>
+            </article>
+
+            <article className="image-feature-card">
+              <div className="media-frame">
+                <img src="/software/compartment-stats.png" alt="小班統計の可視化結果" />
+              </div>
+              <div className="image-feature-copy">
+                <p className="eyebrow">After</p>
+                <h3>小班単位の整理へ</h3>
+                <p>
+                  単木解析結果を重ねて、小班単位で材積・密度などの整理につなげられる状態まで可視化します。
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section className="section section-muted">
+        <div className="container">
+          <div className="section-heading">
+            <p className="eyebrow">Analysis Flow</p>
+            <h2>処理の流れが、画像で分かる</h2>
+            <p>GeoTivity の主要な処理フローを、そのまま製品イメージとして掲載しています。</p>
+          </div>
+
+          <div className="image-card-grid">
+            {visuals.map((item) => (
+              <article className="image-card" key={item.title}>
+                <div className="media-frame">
+                  <img src={item.image} alt={item.alt} />
+                </div>
+                <div className="image-card-body">
+                  <p className="image-card-eyebrow">{item.eyebrow}</p>
+                  <h3>{item.title}</h3>
+                  <p>{item.text}</p>
+                </div>
+              </article>
+            ))}
           </div>
         </div>
       </section>
@@ -179,7 +276,7 @@ export default function SoftwarePage() {
             <h3>トライアルダウンロード</h3>
             <p>GeoTivity.zip を直接ダウンロードして試せます。初回起動時にトライアルが自動開始されます（面積制限あり）。</p>
             <div className="stack-buttons">
-              <a className="btn btn-primary btn-block" href="/downloads/GeoTivity.zip">GeoTivity.zip をダウンロード</a>
+              <a className="btn btn-primary btn-block" href="https://github.com/NickNamaer/geotivity_site/releases/download/v1.0.0/GeoTivity.zip" target="_blank" rel="noopener noreferrer">GeoTivity.zip をダウンロード</a>
               <a className="btn btn-secondary btn-block" href="#contact-cta">導入相談をする</a>
             </div>
           </div>
@@ -269,7 +366,7 @@ export default function SoftwarePage() {
             <p>トライアルは GeoTivity.zip を直接ダウンロードして開始できます。販売や導入相談はメールで受け付けています。</p>
           </div>
           <div className="stack-buttons cta-buttons">
-            <a className="btn btn-primary" href="/downloads/GeoTivity.zip">GeoTivity.zip をダウンロード</a>
+            <a className="btn btn-primary" href="https://github.com/NickNamaer/geotivity_site/releases/download/v1.0.0/GeoTivity.zip" target="_blank" rel="noopener noreferrer">GeoTivity.zip をダウンロード</a>
             <a className="btn btn-secondary text-green-800" href="mailto:info@geotivity.jp?subject=GeoTivity%20お問い合わせ">お問い合わせする</a>
           </div>
         </div>

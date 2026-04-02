@@ -16,7 +16,12 @@ export default function Header() {
           <NavLink to="/software" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>
             ソフト紹介
           </NavLink>
-          <a className="nav-button" href="#contact">お問い合わせ</a>
+          <NavLink to="/about" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>
+            プロフィール
+          </NavLink>
+          <NavLink to="/contact" className="nav-button">
+            お問い合わせ
+          </NavLink>
         </nav>
       </div>
     </header>

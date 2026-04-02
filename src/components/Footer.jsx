@@ -18,6 +18,8 @@ export default function Footer() {
           <ul>
             <li><Link to="/">事業内容</Link></li>
             <li><Link to="/software">GeoTivity for QGIS</Link></li>
+            <li><Link to="/about">プロフィール</Link></li>
+            <li><Link to="/contact">お問い合わせ</Link></li>
             <li><a href="mailto:info@geotivity.jp?subject=GeoTivity%20トライアル申込">トライアル申込</a></li>
           </ul>
         </div>
@@ -28,6 +30,7 @@ export default function Footer() {
           <a className="footer-mail" href="mailto:info@geotivity.jp">info@geotivity.jp</a>
         </div>
       </div>
+
       <div className="footer-bottom">
         <div className="container">© 2026 GeoTivity</div>
       </div>
