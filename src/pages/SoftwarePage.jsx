@@ -140,7 +140,7 @@ export default function SoftwarePage() {
               トライアル申込から導入相談、販売までの動線をまとめた製品ページです。
             </p>
             <div className="button-row">
-              <a className="btn btn-primary" href="https://github.com/NickNamaer/geotivity_site/releases/download/v1.0.0/GeoTivity.zip">GeoTivity.zip をダウンロード</a>
+              <a className="btn btn-primary" href="https://github.com/NickNamaer/geotivity_site/releases/download/v1.0.0/GeoTivity_For_QGIS.zip">GeoTivity.zip をダウンロード</a>
               <a className="btn btn-secondary" href="#visuals">解析イメージを見る</a>
             </div>
           </div>
@@ -276,7 +276,7 @@ export default function SoftwarePage() {
             <h3>トライアルダウンロード</h3>
             <p>GeoTivity.zip を直接ダウンロードして試せます。初回起動時にトライアルが自動開始されます（面積制限あり）。</p>
             <div className="stack-buttons">
-              <a className="btn btn-primary btn-block" href="https://github.com/NickNamaer/geotivity_site/releases/download/v1.0.0/GeoTivity.zip" target="_blank" rel="noopener noreferrer">GeoTivity.zip をダウンロード</a>
+              <a className="btn btn-primary btn-block" href="https://github.com/NickNamaer/geotivity_site/releases/download/v1.0.0/GeoTivity_For_QGIS.zip" target="_blank" rel="noopener noreferrer">GeoTivity.zip をダウンロード</a>
               <a className="btn btn-secondary btn-block" href="#contact-cta">導入相談をする</a>
             </div>
           </div>
@@ -366,7 +366,7 @@ export default function SoftwarePage() {
             <p>トライアルは GeoTivity.zip を直接ダウンロードして開始できます。販売や導入相談はメールで受け付けています。</p>
           </div>
           <div className="stack-buttons cta-buttons">
-            <a className="btn btn-primary" href="https://github.com/NickNamaer/geotivity_site/releases/download/v1.0.0/GeoTivity.zip" target="_blank" rel="noopener noreferrer">GeoTivity.zip をダウンロード</a>
+            <a className="btn btn-primary" href="https://github.com/NickNamaer/geotivity_site/releases/download/v1.0.0/GeoTivity_For_QGIS.zip" target="_blank" rel="noopener noreferrer">GeoTivity.zip をダウンロード</a>
             <a className="btn btn-secondary text-green-800" href="mailto:info@geotivity.jp?subject=GeoTivity%20お問い合わせ">お問い合わせする</a>
           </div>
         </div>
