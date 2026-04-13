@@ -7,7 +7,7 @@ const JSON_LD = {
   "@type": "Organization",
   name: "GeoTivity",
   url: "https://geotivity.jp",
-  logo: "https://geotivity.jp/logo-mark.png",
+  logo: "https://geotivity.jp/ogp.png",
   email: "info@geotivity.jp",
   description:
     "GeoTivityは、森林解析ソフトの提供と、ドローン・LiDAR・GISを活用した森林解析サービスを行う事業です。",
@@ -103,32 +103,4 @@ export default function HomePage() {
             </p>
           </div>
           <div className="bullet-panel">
-            {strengths.map((item) => (
-              <div className="bullet-item" key={item}>
-                <span />
-                <p>{item}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="section">
-        <div className="container">
-          <div className="section-heading">
-            <p className="eyebrow">Software</p>
-            <h2>GeoTivity for QGIS</h2>
-            <p>価格、トライアルダウンロード、販売相談、お問い合わせまでを製品ページにまとめています。</p>
-          </div>
-          <div className="cta-panel">
-            <div>
-              <h3>本体 税込330,000円 / 年間サポート 税込110,000円</h3>
-              <p>GeoTivity Engine 本体については別途相談です。</p>
-            </div>
-            <Link className="btn btn-primary" to="/software">製品ページへ進む</Link>
-          </div>
-        </div>
-      </section>
-    </>
-  );
-}
+            {s

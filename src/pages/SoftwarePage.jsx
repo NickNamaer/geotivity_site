@@ -370,40 +370,4 @@ export default function SoftwarePage() {
               データがあるが自社運用前にまず解析したいケースにも対応可能です。
             </p>
             <a className="btn btn-secondary" href="mailto:info@geotivity.jp?subject=GeoTivity%20解析相談">解析相談をする</a>
-          </article>
-        </div>
-      </section>
-
-      <section className="section section-muted">
-        <div className="container">
-          <div className="section-heading">
-            <p className="eyebrow">FAQ</p>
-            <h2>よくある質問</h2>
-          </div>
-          <div className="faq-list">
-            {faq.map((item) => (
-              <details className="faq-item" key={item.q}>
-                <summary>{item.q}</summary>
-                <p>{item.a}</p>
-              </details>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="section final-cta" id="contact-cta">
-        <div className="container cta-panel large-cta">
-          <div>
-            <p className="eyebrow">Contact</p>
-            <h2>ダウンロード、販売、導入相談はこちら</h2>
-            <p>トライアルは GeoTivity.zip を直接ダウンロードして開始できます。販売や導入相談はメールで受け付けています。</p>
-          </div>
-          <div className="stack-buttons cta-buttons">
-            <a className="btn btn-primary" href="https://github.com/NickNamaer/geotivity_site/releases/download/v1.0.0/GeoTivity_For_QGIS.zip" target="_blank" rel="noopener noreferrer">GeoTivity.zip をダウンロード</a>
-            <a className="btn btn-secondary text-green-800" href="mailto:info@geotivity.jp?subject=GeoTivity%20お問い合わせ">お問い合わせする</a>
-          </div>
-        </div>
-      </section>
-    </>
-  );
-}
+          

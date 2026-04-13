@@ -16,7 +16,7 @@ const BASE_URL = "https://geotivity.jp";
  */
 export default function SEO({ title, description, path = "", ogImage, jsonLd }) {
   const canonicalUrl = `${BASE_URL}${path}`;
-  const ogImageUrl = ogImage || `${BASE_URL}/logo-mark.png`;
+  const ogImageUrl = ogImage || `${BASE_URL}/ogp.png`;
 
   useEffect(() => {
     // タイトル
@@ -82,8 +82,4 @@ export default function SEO({ title, description, path = "", ogImage, jsonLd }) 
     } else {
       // このページに JSON-LD が不要なら削除
       if (scriptEl) scriptEl.remove();
-    }
-  }, [title, description, canonicalUrl, ogImageUrl, jsonLd]);
-
-  return null;
-}
+  

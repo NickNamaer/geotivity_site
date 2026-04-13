@@ -58,35 +58,4 @@ export default function About() {
             ・ドローンデータの処理（LiDAR / 写真測量）<br />
             ・森林業務に合わせたGISの設計
           </p>
-        </article>
-
-        <article className="card">
-          <h3>経歴ざっくり</h3>
-          <p>
-            ・元長野県職員（林業・治山系）6年間在職<br />
-            ・現場寄りの森林解析を実務で経験<br />
-            ・GeoTivity を個人開発
-          </p>
-        </article>
-
-        <article className="card">
-          <h3>スタンス</h3>
-          <p>
-            研究で終わるものではなく、
-            「明日から現場で使えるか」を基準に作っています。
-          </p>
-        </article>
-
-        <article className="card">
-          <h3>連絡</h3>
-          <p>
-            導入相談・解析相談などお気軽にどうぞ。
-          </p>
-          <p>
-            <a href="mailto:info@geotivity.jp">info@geotivity.jp</a>
-          </p>
-        </article>
-      </div>
-    </div>
-  );
-}
+        </article>
