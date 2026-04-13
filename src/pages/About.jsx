@@ -1,6 +1,29 @@
+import SEO from "../components/SEO";
+
+const JSON_LD = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "柴草 快",
+  jobTitle: "森林解析ソフトウェア開発者",
+  worksFor: {
+    "@type": "Organization",
+    name: "GeoTivity",
+    url: "https://geotivity.jp",
+  },
+  description:
+    "元長野県職員（林業・治山系）。GeoTivity の開発者。QGISベースの森林解析ソフトウェアを個人開発。",
+  email: "info@geotivity.jp",
+};
+
 export default function About() {
   return (
     <div className="container section">
+      <SEO
+        title="プロフィール | GeoTivity"
+        description="GeoTivity 開発者・柴草 快のプロフィール。元長野県職員（林業・治山系6年）。退職後、QGISベースの森林解析ソフト GeoTivity を個人開発中。"
+        path="/about"
+        jsonLd={JSON_LD}
+      />
       <div className="section-heading">
         <p className="eyebrow">Profile</p>
         <h2>プロフィール</h2>

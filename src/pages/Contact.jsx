@@ -1,6 +1,13 @@
+import SEO from "../components/SEO";
+
 export default function Contact() {
   return (
     <div className="container section">
+      <SEO
+        title="お問い合わせ | GeoTivity"
+        description="GeoTivity へのトライアル申込・導入相談・購入・解析受託のお問い合わせはこちら。メールにてお気軽にご連絡ください。"
+        path="/contact"
+      />
       <div className="section-heading">
         <p className="eyebrow">Contact</p>
         <h2>お問い合わせ</h2>

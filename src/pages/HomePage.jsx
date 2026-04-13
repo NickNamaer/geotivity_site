@@ -1,5 +1,22 @@
 import { Link } from "react-router-dom";
 import heroMonitor from "../assets/hero-monitor.png";
+import SEO from "../components/SEO";
+
+const JSON_LD = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "GeoTivity",
+  url: "https://geotivity.jp",
+  logo: "https://geotivity.jp/logo-mark.png",
+  email: "info@geotivity.jp",
+  description:
+    "GeoTivityは、森林解析ソフトの提供と、ドローン・LiDAR・GISを活用した森林解析サービスを行う事業です。",
+  founder: {
+    "@type": "Person",
+    name: "柴草 快",
+  },
+  sameAs: [],
+};
 
 const services = [
   {
@@ -27,6 +44,12 @@ const strengths = [
 export default function HomePage() {
   return (
     <>
+      <SEO
+        title="GeoTivity | 森林解析ソフトと森林データ活用"
+        description="GeoTivityは、森林解析ソフト（GeoTivity for QGIS）の提供と、ドローン・LiDAR・GISを活用した森林解析サービスを行う事業です。現場で使える単木解析・資源量推定を実現します。"
+        path="/"
+        jsonLd={JSON_LD}
+      />
       <section className="hero">
         <div className="container hero-grid">
           <div>

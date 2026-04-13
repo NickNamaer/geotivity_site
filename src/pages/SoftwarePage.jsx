@@ -1,3 +1,30 @@
+import SEO from "../components/SEO";
+
+const JSON_LD = {
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  name: "GeoTivity for QGIS",
+  operatingSystem: "Windows, macOS, Linux",
+  applicationCategory: "GeographyApplication",
+  offers: [
+    {
+      "@type": "Offer",
+      name: "買い切りライセンス",
+      price: "330000",
+      priceCurrency: "JPY",
+    },
+    {
+      "@type": "Offer",
+      name: "年間サポート",
+      price: "110000",
+      priceCurrency: "JPY",
+    },
+  ],
+  description:
+    "QGISプラグインとして動作する森林解析ソフト。CHM作成、樹頂点抽出、樹冠作成、単木解析、森林資源量推定まで一連の処理に対応。",
+  url: "https://geotivity.jp/software",
+};
+
 const features = [
   "DSM / DTM からのCHM作成",
   "CHM補正",
@@ -130,6 +157,12 @@ const faq = [
 export default function SoftwarePage() {
   return (
     <>
+      <SEO
+        title="GeoTivity for QGIS | 価格・トライアル・導入相談 | GeoTivity"
+        description="GeoTivity for QGIS は、QGISで動く森林解析プラグイン。単木解析・樹冠抽出・資源量推定まで対応。本体税込330,000円。トライアル無料ダウンロード可能。"
+        path="/software"
+        jsonLd={JSON_LD}
+      />
       <section className="hero hero-tight">
         <div className="container product-hero">
           <div>
