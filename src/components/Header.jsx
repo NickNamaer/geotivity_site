@@ -16,6 +16,9 @@ export default function Header() {
           <NavLink to="/software" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>
             ソフト紹介
           </NavLink>
+          <NavLink to="/download" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>
+            無料DL
+          </NavLink>
           <NavLink to="/about" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>
             プロフィール
           </NavLink>
